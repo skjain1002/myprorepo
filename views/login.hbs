@@ -1,0 +1,33 @@
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <title>Login</title>
+    <link rel='stylesheet' href='/css/style.css' />
+    <link rel='stylesheet' href='/css/bootstrap.css' />
+</head>
+
+<body>
+    <div class='loginForm'>
+        <div class='box'>
+            <form class='row' action='/login' method='get'>
+                <h3 style='margin: 10px 0;'>{{pageName}}</h3>
+                <div class=''>
+                    <label for='inputEmail4' class='form-label'>Email</label>
+                    <input type='email' name='email' class='form-control' id='inputEmail4' />
+                </div>
+                <div class=''>
+                    <label for='inputPassword4' class='form-label'>Password</label>
+                    <input type='password' name='pass' class='form-control' id='inputPassword4' />
+                </div>
+                <div class='col-12 my-2'>
+                    <button type='submit' name='submit' class='btn btn-primary'>Sign in</button>
+                </div>
+                <span class="err">{{errMessage}}</span>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

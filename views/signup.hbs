@@ -1,0 +1,41 @@
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+  <title>Sign Up</title>
+  <link rel='stylesheet' href='/css/style.css' />
+  <link rel='stylesheet' href='/css/bootstrap.css' />
+</head>
+
+<body>
+  <div class='loginForm'>
+    <div class='box'>
+      <h3 style='margin: 10px 0;'>{{pageName}}</h3>
+      <form class='' action='/signup' method='post'>
+        <div class='form-group'>
+          <label for='usern' class='form-label'>Username</label>
+          <input type='text' name='usern' class='form-control' id='usern' />
+        </div>
+        <div class='form-group'>
+          <label for='phone' class='form-label'>Phone</label>
+          <input type='tel' name='phone' class='form-control' id='phone' />
+        </div>
+        <div class='form-group'>
+          <label for='inputEmail' class='form-label'>Email</label>
+          <input type='email' name='email' class='form-control' id='inputEmail' />
+        </div>
+        <div class='form-group'>
+          <label for='inputPassword' class='form-label'>Password</label>
+          <input type='password' name='pass' class='form-control' id='inputPassword' />
+        </div>
+        <div class='col-12 my-2'>
+          <button type='submit' name='submit' class='btn btn-primary'>Sign Up</button>
+        </div>
+        <span class="err">{{errMessage}}</span>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
